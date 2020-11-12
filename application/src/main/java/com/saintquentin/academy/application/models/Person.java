@@ -1,5 +1,6 @@
 package com.saintquentin.academy.customannotations.models;
 
+import com.saintquentin.academy.customannotations.annotations.interfaces.Builder;
 import com.saintquentin.academy.customannotations.annotations.interfaces.Format;
 import com.saintquentin.academy.customannotations.annotations.interfaces.JsonElement;
 import com.saintquentin.academy.customannotations.annotations.interfaces.JsonSerializable;
@@ -47,18 +48,22 @@ public class Person {
         return this.address;
     }
 
+    @Builder
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
+    @Builder
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
+    @Builder
     public void setAge(String age) {
         this.age = age;
     }
 
+    @Builder
     public void setAddress(String address) {
         this.address = address;
     }
